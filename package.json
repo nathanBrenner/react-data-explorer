@@ -1,0 +1,11 @@
+{
+  "name": "react-data-explorer",
+  "version": "1.0.0",
+  "description": "a react component for exploring data by expanding nested sections of data or searching data",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Brenner",
+  "license": "MIT"
+}
