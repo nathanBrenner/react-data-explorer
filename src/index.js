@@ -1,3 +1,3 @@
 export function ReactDataExplorer() {
-  console.log('hello world');
+  return <div>foo</div>;
 }
