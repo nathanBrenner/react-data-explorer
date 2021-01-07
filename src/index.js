@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Leaf, filterer, Toolbar } from './components';
 import isPrimitive from './components/is-primitive';
 
+export function ReactDataExplorer() {
+  return <div>foo</div>;
+}
+
 export default React.memo(ReactDataExplorer);
 
-function ReactDataExplorer({ data = [] }) {
+function xReactDataExplorer({ data = [] }) {
   const [query, setQuery] = useState('');
   const [filteredData, setFilteredData] = useState(null);
   const [isAllExpanded, setAllExpanded] = useState(false);

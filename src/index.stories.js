@@ -1,5 +1,5 @@
-import ReactDataExplorer from './index';
-
+// import ReactDataExplorer from './index';
+import { ReactDataExplorer } from './index';
 export default {
   title: 'ReactDataExplorer',
   component: ReactDataExplorer,
@@ -10,10 +10,10 @@ const Template = (args) => <ReactDataExplorer {...args} />;
 
 export const Init = Template.bind({});
 
-export const WithData = Template.bind({});
-WithData.args = {
-  data: [],
-};
+// export const WithData = Template.bind({});
+// WithData.args = {
+//   data: [],
+// };
 
 const mockData = [
   {
