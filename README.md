@@ -1,5 +1,4 @@
 todo:
-config storybook
 config jest
 config cicd
 port code over

@@ -1,1 +1,3 @@
 node_modules
+src/components/collapsable_json
+.DS_Store
