@@ -88,7 +88,10 @@ export default function Leaf({
               ''
             ) : (
               <>
-                "<Highlighter string={d.key} highlight={query} />"<span>:</span>
+                {`"`}
+                <Highlighter string={d.key} highlight={query} />
+                {`"`}
+                <span>:</span>
               </>
             )}
           </Key>

@@ -25,7 +25,7 @@ export default function Toolbar({ onChange, onAllExpand, onDownload }) {
   useEffect(() => {
     const timer = setInterval(handleSearch, 200);
     return () => clearInterval(timer);
-  });
+  }, [search]);
 
   function onSearch(e) {
     e.preventDefault();
@@ -48,6 +48,7 @@ export default function Toolbar({ onChange, onAllExpand, onDownload }) {
       setCurrentQuery(search);
     }
   }
+
   return (
     <OuterContainer>
       <Icons>
@@ -92,7 +93,23 @@ export default function Toolbar({ onChange, onAllExpand, onDownload }) {
   );
 }
 
-const TooltipContents = styled(BlueTooltipContents)`
+const TooltipContents = styled.div`
+  white-space: nowrap;
+  width: auto;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  ${(props) => props.position};
+  &::after {
+    content: ' ';
+    border-style: solid;
+    position: absolute;
+    border-color: transparent;
+    ${(props) => props.arrowStyles}
+  }
+
   background: #fff;
   color: rgb(61, 61, 107);
   font-size: 14px;
@@ -101,7 +118,6 @@ const TooltipContents = styled(BlueTooltipContents)`
 const OuterContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100%;
   padding: 20px;
 `;
 
@@ -142,22 +158,22 @@ const StyledInput = styled.input`
   padding-left: 10px;
 `;
 
-const BlueTooltipContents = styled.div`
-  white-space: nowrap;
-  width: auto;
-  background: #2d2e56;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  border-radius: 6px;
-  position: absolute;
-  z-index: ${({ theme }) => theme.zIndex.one};
-  ${(props) => props.position};
-  &::after {
-    content: ' ';
-    border-style: solid;
-    position: absolute;
-    border-color: transparent;
-    ${(props) => props.arrowStyles}
-  }
-`;
+// const BlueTooltipContents = styled.div`
+// white-space: nowrap;
+// width: auto;
+// background: #2d2e56;
+// color: white;
+// text-align: center;
+// padding: 5px;
+// border-radius: 6px;
+// position: absolute;
+// z-index: ${({ theme }) => theme.zIndex.one};
+// ${(props) => props.position};
+// &::after {
+//   content: ' ';
+//   border-style: solid;
+//   position: absolute;
+//   border-color: transparent;
+//   ${(props) => props.arrowStyles}
+// }
+// `;
