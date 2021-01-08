@@ -23,7 +23,7 @@ function App() {
       file: 'pom.xml',
       dependencies: null,
     }]
-  return <ReactDataExplorer data={data}>
+  return <ReactDataExplorer data={data} />
 }
 ```
 
