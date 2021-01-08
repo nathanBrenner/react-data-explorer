@@ -1,6 +1,6 @@
 {
   "name": "@nathan-j-brenner/react-data-explorer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a react component for exploring data by expanding nested sections of data or searching for fields or values",
   "main": "dist/main.js",
   "private": false,
