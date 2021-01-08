@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import isPrimitive from './is-primitive';
+import { isPrimitive } from '../utils';
 
 export default function StyledLeaf({ data, children }) {
   let Component = LeafContainer;

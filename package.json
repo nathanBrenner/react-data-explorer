@@ -1,9 +1,9 @@
 {
-  "name": "react-data-explorer",
+  "name": "@nathan-j-brenner/react-data-explorer",
   "version": "1.0.0",
-  "description": "a react component for exploring data by expanding nested sections of data or searching data",
+  "description": "a react component for exploring data by expanding nested sections of data or searching for fields or values",
   "main": "dist/main.js",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "jest",
     "build": "npx webpack --config ./webpack.prod.js",
@@ -20,6 +20,14 @@
   },
   "author": "Nathan Brenner",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathanBrenner/react-data-explorer/issues"
+  },
+  "homepage": "https://github.com/nathanBrenner/react-data-explorer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanBrenner/react-data-explorer.git"
+  },
   "sideEffects": false,
   "devDependencies": {
     "@babel/cli": "^7.12.8",
@@ -66,5 +74,25 @@
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.1",
     "webpack-merge": "^5.4.0"
-  }
+  },
+  "keywords": [
+    "component",
+    "interactive",
+    "interactive-json",
+    "json",
+    "json-component",
+    "json-display",
+    "json-tree",
+    "json-view",
+    "json-viewer",
+    "json-inspector",
+    "json-tree",
+    "react",
+    "react-component",
+    "react-json",
+    "theme",
+    "tree",
+    "tree-view",
+    "treeview"
+  ]
 }

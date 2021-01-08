@@ -1,6 +1,4 @@
-import isPrimitive from './is-primitive';
-import inQuery from './in-query';
-import leafKey from './leaf-key';
+import { leafKey, inQuery, isPrimitive } from '../utils';
 import Leaf from './leaf';
 
 export default function Leaves({

@@ -1,14 +1,11 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import uid from './uid';
+import { uid, isPrimitive, type, inQuery } from '../utils';
 import Highlighter from './highlighter';
-import Value from './value';
 import Leaves from './leaves';
 import ShowMoreArrow from './show_more_icon';
 import StyledLeaf from './styled-leaf';
-import isPrimitive from './is-primitive';
-import inQuery from './in-query';
-import type from './type';
+import Value from './value';
 
 const PATH_PREFIX = '.root.';
 

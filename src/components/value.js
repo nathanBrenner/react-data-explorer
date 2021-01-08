@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import type from './type';
-import items from './items';
 import Highlighter from './highlighter';
-import inQuery from './in-query';
+import { inQuery, items, type } from '../utils';
 
 export default function Value({ data, query, path }) {
   const t = type(data);

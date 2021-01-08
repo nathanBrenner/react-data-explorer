@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Leaf, filterer, Toolbar } from './components';
-import isPrimitive from './components/is-primitive';
+import { Leaf, Toolbar } from './components';
+import { isPrimitive, filterer } from './utils';
 
 export default React.memo(ReactDataExplorer);
 
