@@ -11,7 +11,9 @@
     "format": "npx prettier --write .",
     "check": "npx prettier --check .",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "patch": "npm version patch",
+    "publish": "npm publish --access public"
   },
   "jest": {
     "transform": {
@@ -63,7 +65,8 @@
     "webpack": "^5.10.0",
     "webpack-clean-plugin": "^0.2.3",
     "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-node-externals": "^2.5.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",

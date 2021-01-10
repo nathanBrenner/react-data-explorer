@@ -7,6 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
     library: 'reactDataExplorer',
+    libraryTarget: 'commonjs',
   },
   externals: {
     react: {
