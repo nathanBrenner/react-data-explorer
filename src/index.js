@@ -2,7 +2,7 @@
 // import { Leaf, Toolbar } from './components';
 // import { isPrimitive, filterer } from './utils';
 
-export default function App() {
+export default function ReactDataExplorer() {
   return <div>hello world</div>;
 }
 
