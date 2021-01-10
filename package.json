@@ -11,9 +11,7 @@
     "format": "npx prettier --write .",
     "check": "npx prettier --check .",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "patch": "npm version patch",
-    "publish": "npm publish --access public"
+    "build-storybook": "build-storybook"
   },
   "jest": {
     "transform": {
